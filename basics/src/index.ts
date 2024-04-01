@@ -1,7 +1,9 @@
 import { OpenAI } from 'openai'
 import { encoding_for_model } from 'tiktoken'
 
-const openai = new OpenAI()
+const openai = new OpenAI({
+    apiKey: process.env.OPEN_API_KEY
+})
 
 async function main(){
     const response = await openai.chat.completions.create({

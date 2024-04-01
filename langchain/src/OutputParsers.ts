@@ -3,6 +3,7 @@ import { ChatPromptTemplate } from '@langchain/core/prompts';
 import { StringOutputParser, CommaSeparatedListOutputParser } from '@langchain/core/output_parsers';
 
 const model = new ChatOpenAI({
+    openAIApiKey: process.env.OPEN_API_KEY,
     modelName: 'gpt-3.5-turbo',
     temperature: 0.7
 });
