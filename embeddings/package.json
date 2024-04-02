@@ -1,10 +1,10 @@
 {
-  "name": "chat_app",
+  "name": "embeddings",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node -r ts-node/register --env-file=.env src/project/FlightAssistant.ts"
+    "start": "node -r ts-node/register --env-file=.env src/emb/main.ts"
   },
   "keywords": [],
   "author": "",
